@@ -5,30 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Title</title>
-  <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
   <img class="bgnd-images" id="top-image" src="./images/Color Blur.svg" alt="top-image" />
-  <header>
-    <nav>
-      <img id="section-top-logo" src="./images/Logo.svg" alt="Logo" />
-      <button class="button-top" id="button-AboutUs" value="About Us">About Us</button>
-      <button class="button-top" id="button-Article" value="Article">Article</button>
-      <select class="button-top" id="select-Property">
-        <option value="Property">Property</option>
-      </select>
-      <button id="button-SignUp" value="Sign Up!">Sign Up!</button>
-    </nav>
-    <img id="section-top-image" src="./images/Group 14top-img.svg" alt="section-top-image" />
-    <section id="slider">
-      <img src="./images/1K Peoplestop1.svg" alt="people1">
-      <img src="./images/1K Peoplestop2.svg" alt="people2">
-      <img src="./images/1K Peoplestop3.svg" alt="people3">
-    </section>
+
+  <section class="header-sect">
     <section id="title">
+
+      <img id="section-top-logo" src="./images/Logo.svg" alt="Logo" />
       <h1>Find The Place To <br> Live
-        <b>Your Dreams</b> <br> Easily Here
+        <b class="your-dreams">Your Dreams</b> <br> Easily Here
       </h1>
       <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
       <img id='search-image' src="./images/fluent_location-16-filled.svg" />
@@ -36,45 +24,66 @@
       <button id="search-button"><img src="./images/Search button.svg" alt="search-button" /></button>
 
       <p>Our Partnership</p>
-      <button class="button-partner" id="button-partner1"><img class="img-partner" src="./images/traveloka_logo 2.svg"
-          alt="traveloka" /></button>
-      <button class="button-partner" id="button-partner2"><img class="img-partner" src="./images/traveloka_logo 5.svg"
-          alt="ticket.com" /></button>
-      <button class="button-partner" id="button-partner3"><img class="img-partner" src="./images/traveloka_logo 3.svg"
-          alt="airbnb" /></button>
-      <button class="button-partner" id="button-partner4"><img class="img-partner" src="./images/traveloka_logo 4.svg"
-          alt="tripadvisor" /></button>
-    </section>
-  </header>
-
-
-  <section id="section-recommendations">
-    <p>Our Recommendations</p>
-    <h1>Featured House</h1>
-    <section id="recommendations-categories">
-      <button class="recommendations-btn" id="recommendations-house"><img src="./images/Vector.svg" />House</button>
-      <button class="recommendations-btn" id="recommendations-villa"><img
-          src="./images/ic_round-villa.svg" />Villa</button>
-      <button class="recommendations-btn" id="recommendations-apartment"><img
-          src="./images/ic_round-apartment.svg" />Apartment</button>
-    </section>
-
-    <section id="recommendations-arrows">
-      <button id="recommendations-left"><img src="./images/Search button (1).svg" /></button>
-      <button id="recommendations-rigth"><img src="./images/Search button (2).svg" /></button>
-    </section>
-    <section class="featured-houses" id="house1">
-      <img class="houses-img" id="house1-img" src="./images/Imghouse1.svg" />
-      <p><b>Roselands House</b></p>
-      <p>$ 35.000.000</p>
-      <section class="person" id="person1">
-        <img class="person-img" src="./images/Ellipse 6person1.svg" />
-        <p>Diane Russel</p>
-        <p>Manchester, Kentucky</p>
+      <section id="partners">
+        <button class="button-partner" id="button-partner1"><img class="img-partner" src="./images/traveloka_logo 2.svg"
+            alt="traveloka" /></button>
+        <button class="button-partner" id="button-partner2"><img class="img-partner" src="./images/traveloka_logo 5.svg"
+            alt="ticket.com" /></button>
+        <button class="button-partner" id="button-partner3"><img class="img-partner" src="./images/traveloka_logo 3.svg"
+            alt="airbnb" /></button>
+        <button class="button-partner" id="button-partner4"><img class="img-partner" src="./images/traveloka_logo 4.svg"
+            alt="tripadvisor" /></button>
       </section>
     </section>
 
-    <section id="recommendations-houses">
+    <section class="slider">
+      <section class="top-buttons">
+        <button class="button-top" id="button-AboutUs" value="About Us">About Us</button>
+        <button class="button-top" id="button-Article" value="Article">Article</button>
+        <select class="button-top" id="select-Property">
+          <option value="Property">Property</option>
+        </select>
+        <button class="button-top" id="button-SignUp" value="Sign Up!">Sign Up!</button>
+      </section>
+      <img class="section-top-image" src="./images/Group 14top-img.svg" alt="section-top-image" />
+      <section class="slider-images">
+        <img class="slider-image" src="./images/1K Peoplestop1.svg" alt="people1">
+        <img class="slider-image" src="./images/1K Peoplestop2.svg" alt="people2">
+        <img class="slider-image" src="./images/1K Peoplestop3.svg" alt="people3">
+      </section>
+    </section>
+  </section>
+
+
+  <section class="section-recommendations">
+    <p>Our Recommendations</p>
+    <section class="rec-navbar">
+      <h1>Featured House</h1>
+      <section class="recommendations-categories">
+        <button class="recommendations-btn" id="recommendations-house"><img src="./images/Vector.svg" />House</button>
+        <button class="recommendations-btn" id="recommendations-villa"><img
+            src="./images/ic_round-villa.svg" />Villa</button>
+        <button class="recommendations-btn" id="recommendations-apartment"><img
+            src="./images/ic_round-apartment.svg" />Apartment</button>
+      </section>
+
+      <section class="recommendations-arrows">
+        <button class="recommendations-btns"><img src="./images/Search button (1).svg" /></button>
+        <button class="recommendations-btns"><img src="./images/Search button (2).svg" /></button>
+      </section>
+    </section>
+
+    <section class="recommendations-houses">
+      <section class="featured-houses" id="house1">
+        <img class="houses-img" id="house1-img" src="./images/Imghouse1.svg" />
+        <p><b>Roselands House</b></p>
+        <p>$ 35.000.000</p>
+        <section class="person" id="person1">
+          <img class="person-img" src="./images/Ellipse 6person1.svg" />
+          <p>Diane Russel</p>
+          <p>Manchester, Kentucky</p>
+        </section>
+      </section>
       <section class="featured-houses" id="house2">
         <img class="houses-img" id="house2-img" src="./images/Imghouse2.svg" />
         <p><b>Woodlandside</b></p>
@@ -120,7 +129,7 @@
       <h1>Let’s tour and see our house!</h1>
       <p>Houses recommended by our partners that have been curated to become the home of your dreams!</p>
       <h3>House Detail</h3>
-      <section id="house-detail">
+      <section class="house-detail">
         <div class="detail">
           <img class="detail-img" src="./images/bed 1bed.svg" alt="Bedrooms" />
           4 Bedrooms
